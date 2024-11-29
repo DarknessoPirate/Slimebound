@@ -2,17 +2,24 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public float rotationSpeed = 10f;
     public float followSpeed = 5f;        // player follow speed
     public Transform target;              // playere reference
     public float distance = 10f;          // distance from the player
     public float height = 5f;             // height offset from the player
 
-    private float targetRotationY = 0f;   //  target Y rotation angle in degrees
-    public bool isRotating = false;      
+    public float targetRotationY = 90f;   //  target Y rotation angle in degrees
+    public float cameraRotationEndThreshold = 0.5f;
+    public bool isRotating = false;
     private float cameraCooldown = 0;
     public bool isOnCooldown
     {
         get { return cameraCooldown > 0; }
+    }
+
+    public bool isReadyToRotate
+    {
+        get { return !isRotating && !isOnCooldown; }
     }
 
     private void Start()
@@ -21,23 +28,32 @@ public class CameraFollow : MonoBehaviour
         targetRotationY = transform.eulerAngles.y;
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         if (cameraCooldown > 0)
         {
             cameraCooldown -= Time.deltaTime;
-            Debug.Log(cameraCooldown);
+
         }
         // calculate the target position based on the target rotation angle
         Quaternion targetRotation = Quaternion.Euler(0, targetRotationY, 0);
         Vector3 offset = targetRotation * new Vector3(0, height, -distance);
         Vector3 targetPosition = target.position + offset;
+        // distance from desired angle and current angle
+        float angleDifference = Quaternion.Angle(transform.rotation, targetRotation);
 
-        // smooth movement to target position
-        transform.position = Vector3.Slerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+        if(angleDifference > cameraRotationEndThreshold)
+        {
+            transform.position = Vector3.Slerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
 
-        // camera always facing the player
-        transform.LookAt(target);
+        
     }
 
     public void RotateCamera(float angle)
@@ -64,4 +80,3 @@ public class CameraFollow : MonoBehaviour
         cameraCooldown = 1f;
     }
 }
-

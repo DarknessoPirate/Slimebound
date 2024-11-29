@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping = false;
     private float jumpStartY;
     private float distanceToMaxJump;
-
+    private Vector3 movementAxis; 
     public float groundCheckDistance = 0.1f; 
     public float ceilingCheckDistance = 0.1f; 
     public bool isGrounded = false;
@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
         rotate.Enable();
         jump.Enable();
         _rb = GetComponent<Rigidbody>();
+
+        if (_rb != null)
+        {
+            movementAxis = _rb.transform.right;
+        }
 
         // adjust ray distances based on sphere collider radius
         SphereCollider sphereCollider = GetComponent<SphereCollider>();
@@ -79,11 +84,8 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector3 cameraRight = Camera.main.transform.right;
-        cameraRight.y = 0; // Keep movement on the XZ plane
-
         float horizontalInput = move.ReadValue<float>(); // -1 for A, 1 for D
-        Vector3 moveDirection = cameraRight * horizontalInput * moveSpeed * Time.deltaTime;
+        Vector3 moveDirection = movementAxis * horizontalInput * moveSpeed * Time.deltaTime;
         _rb.MovePosition(_rb.position + moveDirection);
     }
 
@@ -123,15 +125,18 @@ public class PlayerController : MonoBehaviour
 
     private void HandleRotation()
     {
-        if (!cameraFollow.isRotating && !cameraFollow.isOnCooldown)
+        if (cameraFollow.isReadyToRotate)
         {
             if (rotate.ReadValue<float>() < 0)
             {
                 cameraFollow.RotateCamera(-90f);
+                movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
+
             }
             else if (rotate.ReadValue<float>() > 0)
             {
                 cameraFollow.RotateCamera(90f);
+                movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis
             }
         }
     }

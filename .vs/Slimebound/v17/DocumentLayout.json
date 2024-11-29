@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Darknesso\\Slimebound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|c:\\users\\darknesso\\slimebound\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|C:\\Users\\Darknesso\\Slimebound\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T19:53:30.933Z",
               "EditorCaption": ""
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
               "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAowFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T19:49:03.225Z",
               "EditorCaption": ""
