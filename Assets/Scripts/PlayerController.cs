@@ -127,13 +127,13 @@ public class PlayerController : MonoBehaviour
     {
         if (cameraFollow.isReadyToRotate)
         {
-            if (rotate.ReadValue<float>() < 0)
+            if (rotate.ReadValue<float>() > 0)
             {
                 cameraFollow.RotateCamera(-90f);
                 movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
 
             }
-            else if (rotate.ReadValue<float>() > 0)
+            else if (rotate.ReadValue<float>() < 0)
             {
                 cameraFollow.RotateCamera(90f);
                 movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis

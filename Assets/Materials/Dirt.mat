@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4667431382278408500
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Dirt
+  m_Shader: {fileID: -6465566751694194690, guid: a3d95c136d5e2654391fa8e836c5460b, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _TextureSet:
+        m_Texture: {fileID: 18700000, guid: 416c61b6c420cd04f8c52fc353e543cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TileMap:
+        m_Texture: {fileID: 2800000, guid: cc82cda84d91ec54ca9897136fdbe1da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ExcludeNumber: 1
+    - _InitialObjectScale: 100
+    - _NoiseColorInfluence: 0.467
+    - _NoiseIntensity: 64.56
+    - _NoiseScale: 16
+    - _PixelNoiseRoughness: 54.5
+    - _PixelRoughness: 64.56
+    - _PixelateIntensity: 16
+    - _PixelateIntensity_1: 28.58
+    - _PixelateIntesity: 0.5
+    - _PixelateNoise: 32
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Smoothness: 1.51
+    - _SmoothnessThreshold: 2.41
+    - _TileMapHeight: 1
+    - _TileMapWidth: 8
+    - _TileNumber: 7
+    - _TileNumberMax: 8
+    - _TileNumberMin: 1
+    m_Colors:
+    - _Colorize: {r: 0.509434, g: 0.31959775, b: 0.45318624, a: 0}
+    - _Correction: {r: 5.16, g: 2, b: 2, a: 0}
+    - _MappingCorrection: {r: 0.39, g: 0, b: 0, a: 0}
+    - _Position: {r: 0, g: 2, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _TopColor: {r: 0.29120955, g: 0.56, b: 0.25928, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
