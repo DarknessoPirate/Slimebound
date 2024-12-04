@@ -61,6 +61,8 @@ Material:
     m_Floats:
     - _ExcludeNumber: 1
     - _InitialObjectScale: 100
+    - _InvertRandomTilingAxis: 1
+    - _InvertTilingAxis: 1
     - _NoiseColorInfluence: 0.467
     - _NoiseIntensity: 64.56
     - _NoiseScale: 16
@@ -79,11 +81,13 @@ Material:
     - _TileNumber: 7
     - _TileNumberMax: 8
     - _TileNumberMin: 0
+    - _YAlign: 2
     m_Colors:
     - _Colorize: {r: 0.509434, g: 0.31959775, b: 0.45318624, a: 0}
     - _Correction: {r: 5.16, g: 2, b: 2, a: 0}
     - _MappingCorrection: {r: 0.39, g: 0, b: 0, a: 0}
     - _Position: {r: 0, g: 2, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _TopColor: {r: 0.24554718, g: 0.509434, b: 0.28763697, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
