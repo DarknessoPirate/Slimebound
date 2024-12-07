@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Darknesso\\Slimebound\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|c:\\users\\darknesso\\slimebound\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|C:\\Users\\Darknesso\\Slimebound\\assets\\scripts\\player\\playerinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|C:\\Users\\Darknesso\\Slimebound\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|c:\\users\\darknesso\\slimebound\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Input\\InputHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Input\\InputHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,29 +38,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAvwG0AAAAgAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "InputHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Input\\InputHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\InputHandler.cs",
+              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Input\\InputHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\InputHandler.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAIBJwM4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T19:53:30.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T20:38:39.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerInputHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:00:38.815Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAWwAcBAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T17:59:54.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
               "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwDMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwCYAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T19:49:03.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T19:49:03.225Z"
             }
           ]
         },

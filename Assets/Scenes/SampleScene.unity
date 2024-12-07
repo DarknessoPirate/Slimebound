@@ -119,6 +119,150 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2355087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2355089}
+  - component: {fileID: 2355088}
+  m_Layer: 0
+  m_Name: InputHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2355088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497e40c346791cd4d8ec00f8dc3866ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3ccf61dd-e486-42b8-9f04-58f403a49fe0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 1D Axis
+      m_Id: eea7ecb7-9e20-4274-a772-e9a1b67199ea
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: cf25e225-3be4-4ecb-be44-f3290f1a7a79
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: d9769d71-249d-43b4-924d-836219fda124
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move
+      m_Flags: 8
+    m_Flags: 0
+  rotate:
+    m_Name: Rotate
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 31fcd30c-5cd7-4fb1-ab44-dd5030a8ab3f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 1D Axis
+      m_Id: 1e590884-cd3d-4780-aa25-2213d0444478
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: fa2d6ff8-2a4c-4fb1-bd96-fcafe0ccc9ee
+      m_Path: <Keyboard>/q
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 1fae19b9-f6b1-4dac-b804-28b124b23949
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotate
+      m_Flags: 8
+    m_Flags: 0
+  jump:
+    m_Name: Jump
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 429f8608-41ef-4c28-92a2-7e883c59a4b4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 178426d8-1965-4874-a26b-c92233d67b7b
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump
+      m_Flags: 0
+    m_Flags: 0
+  dash:
+    m_Name: Dash
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 2b348913-1eea-4c0a-8157-d6a7c51c8b62
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 59634424-a960-43ec-9e60-7b3d1c957713
+      m_Path: <Keyboard>/shift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Dash
+      m_Flags: 0
+    m_Flags: 0
+--- !u!4 &2355089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2355087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.207984, y: -27.204268, z: 48.18515}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79668992
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +636,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341935664}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 046a00d03fb9d5845b75708943594c67, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -614,100 +758,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6197462f7d60604d90067a427827eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: Button
-    m_Id: 4e897959-826e-486c-b5f4-475c2f0c8eb4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 1D Axis
-      m_Id: cef40ff1-ba30-4566-ab80-527f4b69d163
-      m_Path: 1DAxis
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 4
-    - m_Name: negative
-      m_Id: 97905a9e-7046-481c-b50c-c9718dd9f306
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    - m_Name: positive
-      m_Id: 85f8ec35-0afa-4105-9ae1-45e475dc08cb
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move
-      m_Flags: 8
-    m_Flags: 0
-  rotate:
-    m_Name: Rotate
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 99d98812-d42a-4012-ab6f-56e8406f1bae
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 1D Axis
-      m_Id: 31a7440a-6db6-436e-9d8b-28b70140929d
-      m_Path: 1DAxis
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Rotate
-      m_Flags: 4
-    - m_Name: negative
-      m_Id: d10e0214-968e-475f-abb8-bfd7360440db
-      m_Path: <Keyboard>/q
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Rotate
-      m_Flags: 8
-    - m_Name: positive
-      m_Id: 4b8faa67-22dc-4091-9f4a-e0c5ae4f208b
-      m_Path: <Keyboard>/e
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Rotate
-      m_Flags: 8
-    m_Flags: 0
-  jump:
-    m_Name: Jump
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 5b48a993-203f-4a93-ae20-b5f7df2ff823
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 52aa81cb-1326-4dae-a34e-8d54fa4c034b
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Jump
-      m_Flags: 0
-    m_Flags: 0
   cameraFollow: {fileID: 330585548}
+  inputHandler: {fileID: 2355088}
   moveSpeed: 5
   gravityMultiplier: -2
   groundCheckDistance: 0.1
   ceilingCheckDistance: 0.1
-  isGrounded: 0
-  isTouchingCeiling: 0
+  wallCheckDistance: 0.5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  wallSlideSpeed: 2
+  dashingPower: 10
+  dashingTime: 0.2
+  dashingCooldown: 1
   jumpForce: 10
-  maxJumpHeight: 4
-  coyoteTime: 0.1
+  wallJumpForce: 7
+  maxJumpHeight: 2
+  coyoteTime: 0.2
   jumpBufferTime: 0.2
+  wallJumpDirection: {x: -1, y: 1, z: 0}
 --- !u!114 &341935672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,3 +1879,4 @@ SceneRoots:
   - {fileID: 136010780}
   - {fileID: 330585546}
   - {fileID: 1147313829}
+  - {fileID: 2355089}

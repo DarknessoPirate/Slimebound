@@ -61,14 +61,26 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ColliderTransformer.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\SwitchMaterial.cs" />
+    <Compile Include="Assets\Scripts\GroundTeleporter.cs" />
+    <Compile Include="Assets\Scripts\CopyHorizontalRotation.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\TriplanarUVmapping.cginc" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+    <None Include="Assets\Shaders\StencilRenderInFront.hlsl" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
+    <None Include="Assets\Shaders\NormalDecal.shader" />
+    <None Include="Assets\Shaders\StencilRenderInFront.shader" />
+    <None Include="Assets\Shaders\PixelArtTriplanarStencil.shader" />
+    <None Include="Assets\Shaders\StencilReference.hlsl" />
+    <None Include="Assets\Shaders\StencilRenderInFront — kopia.shader" />
+    <None Include="Assets\Shaders\DecalFrontRenderStencil.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
