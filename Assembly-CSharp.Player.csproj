@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\GroundTeleporter.cs" />
     <Compile Include="Assets\Scripts\CopyHorizontalRotation.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerControllerRevamped.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
