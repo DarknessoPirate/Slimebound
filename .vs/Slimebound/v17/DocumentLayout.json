@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Darknesso\\Slimebound\\",
+  "WorkspaceRootPath": "G:\\Unity\\Projects\\Slimebound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|c:\\users\\darknesso\\slimebound\\assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|C:\\Users\\Darknesso\\Slimebound\\assets\\scripts\\collidertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\copyhorizontalrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\copyhorizontalrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\collidertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collidertransformer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|C:\\Users\\Darknesso\\Slimebound\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,90 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ColliderTransformer.cs",
-              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\ColliderTransformer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ColliderTransformer.cs",
-              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\ColliderTransformer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ColliderTransformer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:55:11.484Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerAnimator.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T16:51:03.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CopyHorizontalRotation.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\CopyHorizontalRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CopyHorizontalRotation.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\CopyHorizontalRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CopyHorizontalRotation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T16:06:52.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColliderTransformer.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\ColliderTransformer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ColliderTransformer.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\ColliderTransformer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ColliderTransformer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:55:11.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerControllerRevamped.cs",
-              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
-              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "ViewState": "AQIAADABAAAAAAAAAAAiwEABAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T13:43:30.592Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\Darknesso\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAADwv64AAAAJAAAAAAAAAA==",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAhwHQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:59:54.93Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 290,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2024-12-04T17:59:54.93Z",
+              "EditorCaption": ""
             }
           ]
         }
