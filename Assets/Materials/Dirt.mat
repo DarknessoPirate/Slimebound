@@ -61,10 +61,10 @@ Material:
     m_Floats:
     - _ExcludeNumber: 1
     - _InitialObjectScale: 100
-    - _NoiseColorInfluence: 0.467
+    - _NoiseColorInfluence: 0.525
     - _NoiseIntensity: 64.56
     - _NoiseScale: 16
-    - _PixelNoiseRoughness: 54.5
+    - _PixelNoiseRoughness: 60.65
     - _PixelRoughness: 64.56
     - _PixelateIntensity: 16
     - _PixelateIntensity_1: 28.58
@@ -72,13 +72,13 @@ Material:
     - _PixelateNoise: 32
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1.51
+    - _Smoothness: 1.8
     - _SmoothnessThreshold: 2.41
     - _TileMapHeight: 1
     - _TileMapWidth: 8
     - _TileNumber: 7
     - _TileNumberMax: 8
-    - _TileNumberMin: 1
+    - _TileNumberMin: 0
     m_Colors:
     - _Colorize: {r: 0.509434, g: 0.31959775, b: 0.45318624, a: 0}
     - _Correction: {r: 5.16, g: 2, b: 2, a: 0}
