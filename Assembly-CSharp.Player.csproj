@@ -65,9 +65,11 @@
     <Compile Include="Assets\Scripts\ColliderTransformer.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\SwitchMaterial.cs" />
+    <Compile Include="Assets\Scripts\Input\InputHandler.cs" />
     <Compile Include="Assets\Scripts\GroundTeleporter.cs" />
     <Compile Include="Assets\Scripts\CopyHorizontalRotation.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControllerRevamped.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
   </ItemGroup>

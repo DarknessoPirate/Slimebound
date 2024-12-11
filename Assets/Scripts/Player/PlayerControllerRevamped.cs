@@ -60,6 +60,8 @@ public class PlayerControllerRevamped : MonoBehaviour
     public bool isTouchingWall { get; private set; }
     public bool isGrounded { get; private set; }
 
+    public bool isOnXAxis { get; private set; } = true;
+
     private void Start()
     {
         inputHandler.OnMove += HandleMovement;
@@ -117,12 +119,14 @@ public class PlayerControllerRevamped : MonoBehaviour
             {
                 cameraFollow.RotateCamera(-90f);
                 movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
+                isOnXAxis = !isOnXAxis;
 
             }
             else if (value < 0)
             {
                 cameraFollow.RotateCamera(90f);
                 movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis
+                isOnXAxis = !isOnXAxis;
             }
         }
     }
