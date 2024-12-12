@@ -477,7 +477,7 @@
                 "m_Node": {
                     "m_Id": "01e80d30a0bd410abd41574b63bcbaa7"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -1309,7 +1309,7 @@
                 "m_Node": {
                     "m_Id": "31ebd032d4fb47a8a71bbfa345dc7e4f"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -1323,7 +1323,7 @@
                 "m_Node": {
                     "m_Id": "31ebd032d4fb47a8a71bbfa345dc7e4f"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -1387,7 +1387,7 @@
                 "m_Node": {
                     "m_Id": "72e62a6da3cf42c184f0e256c151812c"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -1401,7 +1401,7 @@
                 "m_Node": {
                     "m_Id": "72e62a6da3cf42c184f0e256c151812c"
                 },
-                "m_SlotId": 3
+                "m_SlotId": 2
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -2009,7 +2009,7 @@
                 "m_Node": {
                     "m_Id": "59ea8e7a0d5e40a8bcf0d59821c2f72a"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 2
             }
         },
         {
@@ -2023,7 +2023,7 @@
                 "m_Node": {
                     "m_Id": "cd6f0015cf854dba89e5f0e7ac781ec4"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -2037,7 +2037,7 @@
                 "m_Node": {
                     "m_Id": "59ea8e7a0d5e40a8bcf0d59821c2f72a"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 1
             }
         },
         {
@@ -2051,7 +2051,7 @@
                 "m_Node": {
                     "m_Id": "cd6f0015cf854dba89e5f0e7ac781ec4"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 0
             }
         },
         {
@@ -2329,7 +2329,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "acf974d637bf4b278517400b2d6b464a"
+                    "m_Id": "3392d81f461641ec88e76e91261d5278"
                 },
                 "m_SlotId": 0
             }
@@ -2343,7 +2343,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "3392d81f461641ec88e76e91261d5278"
+                    "m_Id": "acf974d637bf4b278517400b2d6b464a"
                 },
                 "m_SlotId": 0
             }
@@ -5612,8 +5612,8 @@
     "m_ObjectId": "391d3383b928461d97d48ea2f7dd829d",
     "m_Title": "Smoothness",
     "m_Position": {
-        "x": 1449.99951171875,
-        "y": 1044.9998779296875
+        "x": 1450.0,
+        "y": 1045.0001220703125
     }
 }
 
@@ -6879,7 +6879,7 @@
     "m_Title": "Noise XY",
     "m_Position": {
         "x": -1883.0001220703125,
-        "y": 1824.9996337890625
+        "y": 1825.0001220703125
     }
 }
 
@@ -7450,10 +7450,10 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "54250a15778345388454722b992f950c",
-    "m_Title": "Automatic tiling ZY",
+    "m_Title": "Automatic tiling XY",
     "m_Position": {
-        "x": -2525.0,
-        "y": 1152.9998779296875
+        "x": -2525.000244140625,
+        "y": 1153.0001220703125
     }
 }
 
@@ -7702,7 +7702,7 @@
     "m_ObjectId": "57364f9a21b343b2b58c93024ea2575e",
     "m_Title": "Picking random texture",
     "m_Position": {
-        "x": -4810.99951171875,
+        "x": -4811.0,
         "y": 657.0
     }
 }
@@ -8697,10 +8697,10 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "68986e29e7f04c329685958e7c24580d",
-    "m_Title": "Automatic tiling XY",
+    "m_Title": "Automatic tiling ZY",
     "m_Position": {
         "x": -2459.0,
-        "y": 256.9999694824219
+        "y": 257.0
     }
 }
 
@@ -9092,9 +9092,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -494.9999694824219,
-            "y": -862.9999389648438,
-            "width": 119.99996948242188,
+            "x": -515.9999389648438,
+            "y": -883.9999389648438,
+            "width": 120.0,
             "height": 149.0
         }
     },
@@ -12368,8 +12368,8 @@
     "m_ObjectId": "a571d2604e7b48f9824ffddbdbd11634",
     "m_Title": "Add Noise to texture",
     "m_Position": {
-        "x": -289.0,
-        "y": 1035.9998779296875
+        "x": -289.0001525878906,
+        "y": 1036.0
     }
 }
 
@@ -12513,7 +12513,7 @@
     "m_ObjectId": "a9e9e0a5827342c998529e41e68416c9",
     "m_Title": "Noise XY",
     "m_Position": {
-        "x": -1441.000244140625,
+        "x": -1440.9998779296875,
         "y": -1049.9998779296875
     }
 }
@@ -15973,8 +15973,8 @@
     "m_ObjectId": "ec2e42677f2d42bd8bc9337790eeed7f",
     "m_Title": "Add Noise to texture",
     "m_Position": {
-        "x": -388.0,
-        "y": 12.999916076660157
+        "x": -388.0001525878906,
+        "y": 13.0
     }
 }
 

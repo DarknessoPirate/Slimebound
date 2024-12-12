@@ -325,6 +325,7 @@ public class PlayerControllerRevamped : MonoBehaviour
         }
     }
 
+ 
     private void OnDrawGizmosSelected()
     {
         Vector3 colliderBounds = _boxCollider.bounds.extents;
@@ -364,5 +365,10 @@ public class PlayerControllerRevamped : MonoBehaviour
         Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin + Vector3.right * wallCheckDistance);
         Gizmos.DrawLine(topWallRayOrigin, topWallRayOrigin - Vector3.right * wallCheckDistance);
         Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin - Vector3.right * wallCheckDistance);
+    }
+
+    public Vector3 GetMovementAxis()
+    {
+        return movementAxis;
     }
 }

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dirt 1
+  m_Name: Grass
   m_Shader: {fileID: -6465566751694194690, guid: 350c9f56822d8f44d917f91dd57b864b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,10 +60,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _ExcludeNumber: 1
-    - _InitialObjectScale: 100
+    - _InitialObjectScale: 0.5
     - _InvertRandomTilingAxis: 1
     - _InvertTilingAxis: 1
-    - _NoiseColorInfluence: 0.467
+    - _NoiseColorInfluence: 0.426
     - _NoiseIntensity: 64.56
     - _NoiseScale: 16
     - _PixelNoiseRoughness: 54.5
@@ -80,7 +80,7 @@ Material:
     - _TileMapWidth: 8
     - _TileNumber: 7
     - _TileNumberMax: 8
-    - _TileNumberMin: 0
+    - _TileNumberMin: 1
     - _YAlign: 2
     m_Colors:
     - _Colorize: {r: 0.509434, g: 0.31959775, b: 0.45318624, a: 0}
