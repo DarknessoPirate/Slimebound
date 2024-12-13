@@ -83,7 +83,7 @@ Material:
     - _TileNumberMin: 1
     - _YAlign: 2
     m_Colors:
-    - _Colorize: {r: 0.509434, g: 0.31959775, b: 0.45318624, a: 0}
+    - _Colorize: {r: 0.50980395, g: 0.4392157, b: 0.49411765, a: 0}
     - _Correction: {r: 5.16, g: 2, b: 2, a: 0}
     - _MappingCorrection: {r: 0.39, g: 0, b: 0, a: 0}
     - _Position: {r: 0, g: 2, b: 0, a: 0}

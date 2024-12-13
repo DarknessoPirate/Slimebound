@@ -4,16 +4,18 @@ using UnityEngine;
 public class ColliderTransformer : MonoBehaviour
 {
     private bool m_Started;
-    private Collider[] hitColliders;
+    private Collider[] _hitColliders;
 
     public void GetColliders()
     {
-        hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, ~(LayerMask.NameToLayer("ColliderCopy")));
+        int colliderCopyLayer = LayerMask.NameToLayer("ColliderCopy");
+        int layerMask = 1 << colliderCopyLayer;
+        _hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, layerMask);
     }
 
     public void DeactiveColliders()
     {
-        foreach (Collider collider in hitColliders)
+        foreach (Collider collider in _hitColliders)
         {
             collider.enabled = false;
         }
@@ -21,7 +23,7 @@ public class ColliderTransformer : MonoBehaviour
 
     public void ActivateColliders()
     {
-        foreach (Collider collider in hitColliders)
+        foreach (Collider collider in _hitColliders)
         {
             collider.enabled = true;
         }

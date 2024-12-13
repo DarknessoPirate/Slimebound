@@ -61,9 +61,11 @@ public class PlayerControllerRevamped : MonoBehaviour
     public bool isGrounded { get; private set; }
 
     public bool isOnXAxis { get; private set; } = true;
+    private bool m_started = false;
 
     private void Start()
     {
+        m_started = true;
         inputHandler.OnMove += HandleMovement;
         inputHandler.OnJump += HandleJump;
         inputHandler.OnRotate += HandleRotation;
@@ -76,10 +78,12 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private void Update()
     {
+        HandleLedge();
         CheckGrounded();
         HandleTimers();
         CheckCeilingHit();
         CheckWallCollision();
+        CheckPlayerVisibility();
         CheckDirectionToFace(moveDirection > 0);
     }
 
@@ -90,6 +94,40 @@ public class PlayerControllerRevamped : MonoBehaviour
             ApplyGravity();
             Move();
             Jump();
+        }
+    }
+
+    private void CheckPlayerVisibility()
+    {
+        Vector3 direction = transform.position - cameraFollow.transform.position;
+        RaycastHit hit;
+        int pillarLayer = LayerMask.NameToLayer("Pillar");
+        int playerLayer = LayerMask.NameToLayer("Player");
+        int defaultLayer = LayerMask.NameToLayer("Default");
+
+        // Create a layer mask that includes "Pillar", "Player", and "Default"
+        int layerMask = (1 << pillarLayer) | (1 << playerLayer) | (1 << defaultLayer);
+
+        // Perform the raycast
+        if (Physics.Raycast(cameraFollow.transform.position, direction, out hit, direction.magnitude + 10f, layerMask))
+        {
+            if(hit.collider.tag == "Player")
+            {
+                inputHandler.EnabledInputs = true;
+            } else
+            {
+                _rb.linearVelocity = new Vector3(0f, _rb.linearVelocity.y, 0f);
+                inputHandler.EnabledInputs = false;
+            }
+            Debug.DrawLine(cameraFollow.transform.position, hit.point, Color.green);
+        }
+    }
+
+    private void HandleLedge()
+    {
+        if (!isGrounded && _rb.linearVelocity.magnitude < 0.01f) // Is stuck on the ledge (stuck in air)
+        {
+            _rb.AddForce(wallNormal * Physics.gravity.y * (gravityMultiplier - 1), ForceMode.Acceleration);
         }
     }
 
@@ -236,12 +274,12 @@ public class PlayerControllerRevamped : MonoBehaviour
         Vector3 colliderBounds = _boxCollider.bounds.extents;
 
         // Ceiling rays
-        Vector3 leftRayOrigin = transform.position + _boxCollider.center +
-                                Vector3.left * colliderBounds.x/1.1f +
+        Vector3 leftRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                    transform.right * _boxCollider.size.x / 2.05f +
+                                    Vector3.up * (colliderBounds.y - inwardOffset);
+        Vector3 rightRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                -1 * transform.right * _boxCollider.size.x / 2.05f +
                                 Vector3.up * (colliderBounds.y - inwardOffset);
-        Vector3 rightRayOrigin = transform.position + _boxCollider.center +
-                                 Vector3.right * colliderBounds.x/1.1f +
-                                 Vector3.up * (colliderBounds.y - inwardOffset);
 
         RaycastHit hit;
         isTouchingCeiling = Physics.Raycast(leftRayOrigin, Vector3.up, out hit, ceilingCheckDistance) ||
@@ -258,10 +296,10 @@ public class PlayerControllerRevamped : MonoBehaviour
         Vector3 colliderBounds = _boxCollider.bounds.extents;
 
         // Wall rays centered along the Z-axis
-        Vector3 topRayOrigin = transform.position + _boxCollider.center +
-                               Vector3.up * (colliderBounds.y - inwardOffset);
+        Vector3 topRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                Vector3.up * (_boxCollider.size.y / 2 - inwardOffset);
         Vector3 bottomRayOrigin = transform.position + _boxCollider.center +
-                                  Vector3.down * (colliderBounds.y - inwardOffset);
+                                Vector3.down * (_boxCollider.size.y / 2 - inwardOffset);
 
         RaycastHit hit;
         isTouchingWall = false;
@@ -287,14 +325,14 @@ public class PlayerControllerRevamped : MonoBehaviour
         Vector3 colliderBounds = _boxCollider.bounds.extents;
 
         // Determine the start and end positions for the ground rays
-        Vector3 leftRayOrigin = transform.position + _boxCollider.center +
-                                Vector3.left * colliderBounds.x / 1.1f -
-                                Vector3.up * (colliderBounds.y - inwardOffset);
-        Vector3 rightRayOrigin = transform.position + _boxCollider.center +
-                                 Vector3.right * colliderBounds.x/ 1.1f -
-                                 Vector3.up * (colliderBounds.y - inwardOffset);
-        isGrounded = Physics.Raycast(leftRayOrigin, Vector3.down, groundCheckDistance) || Physics.Raycast(rightRayOrigin, Vector3.down, groundCheckDistance);
+        Vector3 leftRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                   transform.right * _boxCollider.size.x / 2.05f -
+                                   Vector3.up * (colliderBounds.y - inwardOffset);
 
+        Vector3 rightRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                -1 * transform.right * _boxCollider.size.x / 2.05f -
+                                Vector3.up * (colliderBounds.y - inwardOffset);
+        isGrounded = Physics.Raycast(leftRayOrigin, Vector3.down, groundCheckDistance) || Physics.Raycast(rightRayOrigin, Vector3.down, groundCheckDistance);
     }
 
     private bool CanJump()
@@ -313,8 +351,6 @@ public class PlayerControllerRevamped : MonoBehaviour
     }
 
 
-
-
     private void CheckDirectionToFace(bool isMovingRight)
     {
         if (isMovingRight && transform.localScale.x < 0 || !isMovingRight && transform.localScale.x > 0)
@@ -328,43 +364,48 @@ public class PlayerControllerRevamped : MonoBehaviour
  
     private void OnDrawGizmosSelected()
     {
-        Vector3 colliderBounds = _boxCollider.bounds.extents;
-
-        // Ground check rays
-        Vector3 leftGroundRay = transform.position + _boxCollider.center +
-                                Vector3.left * colliderBounds.x / 1.1f -
-                                Vector3.up * (colliderBounds.y - inwardOffset);
-        Vector3 rightGroundRay = transform.position + _boxCollider.center +
-                                 Vector3.right * colliderBounds.x / 1.1f -
-                                 Vector3.up * (colliderBounds.y - inwardOffset);
-
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(leftGroundRay, leftGroundRay + Vector3.down * groundCheckDistance);
-        Gizmos.DrawLine(rightGroundRay, rightGroundRay + Vector3.down * groundCheckDistance);
-
-        // Ceiling check rays
-        Vector3 leftCeilingRayOrigin = transform.position + _boxCollider.center +
-                                Vector3.left * colliderBounds.x / 1.1f +
-                                Vector3.up * (colliderBounds.y - inwardOffset);
-        Vector3 rightCeilingRayOrigin = transform.position + _boxCollider.center +
-                                 Vector3.right * colliderBounds.x / 1.1f +
-                                 Vector3.up * (colliderBounds.y - inwardOffset);
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawLine(leftCeilingRayOrigin, leftCeilingRayOrigin + Vector3.up * ceilingCheckDistance);
-        Gizmos.DrawLine(rightCeilingRayOrigin, rightCeilingRayOrigin + Vector3.up * ceilingCheckDistance);
-
-        // Wall check rays centered along Z-axis
-        Vector3 topWallRayOrigin = transform.position + _boxCollider.center +
+        if(m_started)
+        {
+            Vector3 colliderBounds = _boxCollider.bounds.extents;
+            
+            // Ground check rays
+            Vector3 leftGroundRay = transform.TransformPoint(_boxCollider.center) +
+                                    transform.right * _boxCollider.size.x / 2.05f - 
                                     Vector3.up * (colliderBounds.y - inwardOffset);
-        Vector3 bottomWallRayOrigin = transform.position + _boxCollider.center +
-                                  Vector3.down * (colliderBounds.y - inwardOffset);
 
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(topWallRayOrigin, topWallRayOrigin + Vector3.right * wallCheckDistance);
-        Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin + Vector3.right * wallCheckDistance);
-        Gizmos.DrawLine(topWallRayOrigin, topWallRayOrigin - Vector3.right * wallCheckDistance);
-        Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin - Vector3.right * wallCheckDistance);
+            Vector3 rightGroundRay = transform.TransformPoint(_boxCollider.center) +
+                                    -1 * transform.right * _boxCollider.size.x / 2.05f - 
+                                    Vector3.up * (colliderBounds.y - inwardOffset);
+
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(leftGroundRay, leftGroundRay + Vector3.down * groundCheckDistance);
+            Gizmos.DrawLine(rightGroundRay, rightGroundRay + Vector3.down * groundCheckDistance);
+
+            // Ceiling check rays
+            Vector3 leftCeilingRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                    transform.right * _boxCollider.size.x / 2.05f + 
+                                    Vector3.up * (colliderBounds.y - inwardOffset);
+            Vector3 rightCeilingRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                    -1 * transform.right * _boxCollider.size.x / 2.05f + 
+                                    Vector3.up * (colliderBounds.y - inwardOffset);
+
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(leftCeilingRayOrigin, leftCeilingRayOrigin + Vector3.up * ceilingCheckDistance);
+            Gizmos.DrawLine(rightCeilingRayOrigin, rightCeilingRayOrigin + Vector3.up * ceilingCheckDistance);
+
+            // Wall check rays centered along Z-axis
+            Vector3 topWallRayOrigin = transform.TransformPoint(_boxCollider.center) +
+                                    Vector3.up * (_boxCollider.size.y/2 - inwardOffset);
+            Vector3 bottomWallRayOrigin = transform.position + _boxCollider.center +
+                                    Vector3.down * (_boxCollider.size.y/2 - inwardOffset);
+   
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(topWallRayOrigin, topWallRayOrigin + transform.right * wallCheckDistance);
+            Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin + transform.right * wallCheckDistance);
+            Gizmos.DrawLine(topWallRayOrigin, topWallRayOrigin - transform.right * wallCheckDistance);
+            Gizmos.DrawLine(bottomWallRayOrigin, bottomWallRayOrigin - transform.right * wallCheckDistance);
+        }
     }
 
     public Vector3 GetMovementAxis()

@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+    public bool EnabledInputs = true;
+
     public InputAction move;
     public InputAction rotate;
     public InputAction jump;
@@ -38,9 +40,6 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Update()
     {
-        // Raise movement event
-        float moveInput = move.ReadValue<float>();
-        OnMove?.Invoke(moveInput);
         // Raise rotation event
         float rotateInput = rotate.ReadValue<float>();
         if (rotateInput != 0)
@@ -48,15 +47,22 @@ public class PlayerInputHandler : MonoBehaviour
             OnRotate?.Invoke(rotateInput);
         }
 
-        // Raise jump event
-        if (jump.triggered)
+        if (EnabledInputs)
         {
-            OnJump?.Invoke();
-        }
+            // Raise movement event
+            float moveInput = move.ReadValue<float>();
+            OnMove?.Invoke(moveInput);
 
-        if (dash.triggered)
-        {
-            OnDash?.Invoke();
+            // Raise jump event
+            if (jump.triggered)
+            {
+                OnJump?.Invoke();
+            }
+
+            if (dash.triggered)
+            {
+                OnDash?.Invoke();
+            }
         }
     }
 }

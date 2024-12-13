@@ -5,7 +5,7 @@ public class ColliderManager : MonoBehaviour
 {
     internal class TransformedObject
     {
-        GameObject copiedObject { get; }
+        public GameObject copiedObject { get; }
         public Vector3 originalPosition { get; }
         Axis axis;
         public TransformedObject(GameObject originalObject, Axis axis)
@@ -25,6 +25,7 @@ public class ColliderManager : MonoBehaviour
                     break;
             }
             copiedObject.layer = LayerMask.NameToLayer("ColliderCopy");
+            copiedObject.AddComponent<ColliderTransformerHelper>();
         }
 
         public void SwitchAxis(Axis newAxis)
@@ -119,7 +120,8 @@ public class ColliderManager : MonoBehaviour
         }
         foreach (var collider in _detectedColliders)
         {
-            collider.SwitchAxis(axis);
+            collider.SwitchAxis(axis);  
+            collider.copiedObject.gameObject.GetComponent<ColliderTransformerHelper>().InitCollider();
         }
     }
 
