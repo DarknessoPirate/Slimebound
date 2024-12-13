@@ -62,6 +62,8 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     public bool isOnXAxis { get; private set; } = true;
     private bool m_started = false;
+    private Vector3 catchedVelocity;
+    private bool broughtPlayerBack = false;
 
     private void Start()
     {
@@ -83,7 +85,6 @@ public class PlayerControllerRevamped : MonoBehaviour
         HandleTimers();
         CheckCeilingHit();
         CheckWallCollision();
-        CheckPlayerVisibility();
         CheckDirectionToFace(moveDirection > 0);
     }
 
@@ -92,35 +93,74 @@ public class PlayerControllerRevamped : MonoBehaviour
         if (!isDashing)
         {
             ApplyGravity();
-            Move();
-            Jump();
+            if (CheckPlayerVisibility())
+            {
+                Move();
+                Jump();
+            }
         }
     }
 
-    private void CheckPlayerVisibility()
+    private bool CheckPlayerVisibility()
     {
         Vector3 direction = transform.position - cameraFollow.transform.position;
         RaycastHit hit;
         int pillarLayer = LayerMask.NameToLayer("Pillar");
         int playerLayer = LayerMask.NameToLayer("Player");
-        int defaultLayer = LayerMask.NameToLayer("Default");
 
         // Create a layer mask that includes "Pillar", "Player", and "Default"
-        int layerMask = (1 << pillarLayer) | (1 << playerLayer) | (1 << defaultLayer);
+        int layerMask = (1 << pillarLayer) | (1 << playerLayer);
 
         // Perform the raycast
         if (Physics.Raycast(cameraFollow.transform.position, direction, out hit, direction.magnitude + 10f, layerMask))
         {
-            if(hit.collider.tag == "Player")
+            //Debug.DrawLine(cameraFollow.transform.position, hit.point, Color.green);
+            if (hit.collider.tag == "Player")
             {
+                catchedVelocity = _rb.linearVelocity;
                 inputHandler.EnabledInputs = true;
+                broughtPlayerBack = false;
+                return true;
             } else
             {
-                _rb.linearVelocity = new Vector3(0f, _rb.linearVelocity.y, 0f);
-                inputHandler.EnabledInputs = false;
+                if(broughtPlayerBack == false)
+                {
+                    var movementIntendedDirection = Math.Max(Math.Abs(_rb.linearVelocity.x), Math.Abs(_rb.linearVelocity.z));
+                    if(movementIntendedDirection > 0.01f)
+                    {
+                        if (Math.Abs(_rb.linearVelocity.x) == movementIntendedDirection)
+                        {
+                            if (_rb.linearVelocity.x == movementIntendedDirection) // Positive x velocity
+                            {
+                                //Debug.Log("X+");
+                                _rb.AddForce(Vector3.left * 10, ForceMode.Impulse);
+                            }
+                            else // Negative x velocity
+                            {
+                                //Debug.Log("X-");
+                                _rb.AddForce(Vector3.right * 10, ForceMode.Impulse);
+                            }
+                        }
+                        else
+                        {
+                            if (_rb.linearVelocity.z == movementIntendedDirection) // Positive z velocity
+                            {
+                                //Debug.Log("Z+");
+                                _rb.AddForce(Vector3.back * 10, ForceMode.Impulse);
+                            }
+                            else // Negative z velocity
+                            {
+                                //Debug.Log("Z-");
+                                _rb.AddForce(Vector3.forward * 10, ForceMode.Impulse);
+                            }
+                        }
+                    }
+                    inputHandler.EnabledInputs = false;
+                    broughtPlayerBack = true;
+                }
             }
-            Debug.DrawLine(cameraFollow.transform.position, hit.point, Color.green);
         }
+        return false;
     }
 
     private void HandleLedge()
@@ -149,19 +189,38 @@ public class PlayerControllerRevamped : MonoBehaviour
         }
     }
 
+    private bool RotationAllowed(bool rotationDirection)
+    { 
+        int pillarLayer = LayerMask.NameToLayer("Pillar");
+        if(rotationDirection)
+        {
+            return !Physics.Raycast(transform.TransformPoint(_boxCollider.center), transform.right, 200f, 1 << pillarLayer);
+        } else
+        {
+            return !Physics.Raycast(transform.TransformPoint(_boxCollider.center), -transform.right, 200f, 1 << pillarLayer);
+        }
+    }
+
     private void HandleRotation(float value)
     {
         if (cameraFollow.isReadyToRotate)
         {
             if (value > 0)
             {
+                if(!RotationAllowed(true))
+                {
+                    return;
+                }
                 cameraFollow.RotateCamera(-90f);
                 movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
                 isOnXAxis = !isOnXAxis;
-
             }
             else if (value < 0)
             {
+                if (!RotationAllowed(false))
+                {
+                    return;
+                }
                 cameraFollow.RotateCamera(90f);
                 movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis
                 isOnXAxis = !isOnXAxis;
