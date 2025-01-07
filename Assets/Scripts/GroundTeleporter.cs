@@ -21,6 +21,7 @@ public class GroundTeleporter : MonoBehaviour
             if (!Player.GetComponent<PlayerController>().isGrounded && !Physics.SphereCast(ray, transform.localScale.x / 2f - 0.05f, out hit2, ActivationDistance + 0.1f, LayerMask.GetMask("Default")))
             {
                 ColliderManager.CheckTransformedCollider(hit.collider, Player);
+                
             }
         }
     }
