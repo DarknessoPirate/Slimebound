@@ -28,6 +28,7 @@ public class PlayerControllerRevamped : MonoBehaviour
     [Header("Jump Settings")]
     public float jumpForce = 11f;
     public float wallJumpForce = 14f;
+    public bool sameWallWalljump = false;
     private bool canDoubleJump = false;
     public float coyoteTime = 0.2f;
     public float jumpBufferTime = 0.2f;
@@ -41,7 +42,7 @@ public class PlayerControllerRevamped : MonoBehaviour
     public float wallSlideSpeed = 1.5f;
     public float wallJumpDirectionMultiplier = 1.5f;
     private Vector3 wallNormal;
-
+    private Vector3 lastWallJumpNormal;
 
     [Header("Dash Settings")]
     public float dashingPower = 12f;
@@ -60,7 +61,6 @@ public class PlayerControllerRevamped : MonoBehaviour
     public bool isTouchingWall { get; private set; }
     public bool isGrounded { get; private set; }
 
-    public bool isOnXAxis { get; private set; } = true;
     private bool m_started = false;
     private Vector3 catchedVelocity;
     private bool broughtPlayerBack = false;
@@ -98,6 +98,9 @@ public class PlayerControllerRevamped : MonoBehaviour
                 Move();
                 Jump();
             }
+        } else
+        {
+            CheckPlayerVisibility();
         }
     }
 
@@ -165,7 +168,7 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private void HandleLedge()
     {
-        if (!isGrounded && _rb.linearVelocity.magnitude < 0.01f) // Is stuck on the ledge (stuck in air)
+        if (!isGrounded && _rb.linearVelocity.magnitude < 0.001f) // Is stuck on the ledge (stuck in air)
         {
             _rb.AddForce(wallNormal * Physics.gravity.y * (gravityMultiplier - 1), ForceMode.Acceleration);
         }
@@ -213,7 +216,6 @@ public class PlayerControllerRevamped : MonoBehaviour
                 }
                 cameraFollow.RotateCamera(-90f);
                 movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
-                isOnXAxis = !isOnXAxis;
             }
             else if (value < 0)
             {
@@ -223,7 +225,6 @@ public class PlayerControllerRevamped : MonoBehaviour
                 }
                 cameraFollow.RotateCamera(90f);
                 movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis
-                isOnXAxis = !isOnXAxis;
             }
         }
     }
@@ -287,6 +288,10 @@ public class PlayerControllerRevamped : MonoBehaviour
             _rb.linearVelocity = jumpDir * wallJumpForce;
             isJumping = true;
             lastJumpPressedTime = 0; // Consume jump input
+            if (!isGrounded)
+            {
+                lastWallJumpNormal = wallNormal; //save last normal
+            }
             return;
 
         }
@@ -347,6 +352,7 @@ public class PlayerControllerRevamped : MonoBehaviour
         if (isTouchingCeiling && _rb.linearVelocity.y > 0)
         {
             _rb.linearVelocity = new Vector3(_rb.linearVelocity.x, 0, _rb.linearVelocity.z);
+            Debug.Log("Killing velocity y");
         }
     }
 
@@ -356,12 +362,16 @@ public class PlayerControllerRevamped : MonoBehaviour
 
         // Wall rays centered along the Z-axis
         Vector3 topRayOrigin = transform.TransformPoint(_boxCollider.center) +
-                                Vector3.up * (_boxCollider.size.y / 2 - inwardOffset);
+                                Vector3.up * (_boxCollider.size.y / 2.05f - inwardOffset);
         Vector3 bottomRayOrigin = transform.position + _boxCollider.center +
-                                Vector3.down * (_boxCollider.size.y / 2 - inwardOffset);
+                                Vector3.down * (_boxCollider.size.y / 2.05f - inwardOffset);
 
         RaycastHit hit;
         isTouchingWall = false;
+        if (_rb.linearVelocity.y >= 0f)
+        {
+            return;
+        }
 
         // Cast ray in both directions (right and left)
         Vector3[] directions = { movementAxis.normalized, -movementAxis.normalized };
@@ -392,6 +402,10 @@ public class PlayerControllerRevamped : MonoBehaviour
                                 -1 * transform.right * _boxCollider.size.x / 2.05f -
                                 Vector3.up * (colliderBounds.y - inwardOffset);
         isGrounded = Physics.Raycast(leftRayOrigin, Vector3.down, groundCheckDistance) || Physics.Raycast(rightRayOrigin, Vector3.down, groundCheckDistance);
+        if(isGrounded)
+        {
+            lastWallJumpNormal = Vector3.zero;
+        }
     }
 
     private bool CanJump()
@@ -401,6 +415,10 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private bool CanWallJump()
     {
+        if(!sameWallWalljump)
+        {
+            return isTouchingWall && !isGrounded && lastWallJumpNormal != wallNormal;
+        }
         return isTouchingWall && !isGrounded;
     }
 

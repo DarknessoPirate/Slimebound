@@ -2,7 +2,11 @@ using UnityEngine;
 
 public class ColliderTransformerHelper : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    /*
+    This code is responsible for handling situation where player would be stuck in collider
+    after change of axis.
+    */
+
     private int _timer = 1;
     private bool _stayTrigger = false;
 
@@ -21,9 +25,12 @@ public class ColliderTransformerHelper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!_stayTrigger)
+        // 2-Frame-check if player might be stuck,
+        // returns to solid block if not.
+
+        if(!_stayTrigger && _timer > 0)
         {
-            if (_timer > 0 && _timer < 3)
+            if (_timer < 3)
             {
                 _timer++;
             }
@@ -35,7 +42,8 @@ public class ColliderTransformerHelper : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    // Player would be stuck in collider
+    private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player")
         {
@@ -43,6 +51,7 @@ public class ColliderTransformerHelper : MonoBehaviour
         }
     }
 
+    // Player no longer would be stuck in collider
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")

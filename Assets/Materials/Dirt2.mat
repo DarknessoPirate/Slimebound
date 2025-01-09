@@ -74,7 +74,7 @@ Material:
     - _PixelateNoise: 32
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1.51
+    - _Smoothness: 1
     - _SmoothnessThreshold: 2.41
     - _TileMapHeight: 1
     - _TileMapWidth: 8
