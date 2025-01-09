@@ -11,7 +11,10 @@ public class PlayerAnimator : MonoBehaviour
     const string playerStartJump = "StartJump";
     const string playerJump = "Jump";
     const string playerRaise = "Raise";
+    const string playerFall = "Fall";
     const string playerEndFall = "EndFall";
+    const string playerHitch = "Hitch";
+    const string startHitch = "StartHitch";
 
     void Awake()
     {
@@ -25,6 +28,10 @@ public class PlayerAnimator : MonoBehaviour
         if(rigidbody.linearVelocity.y > 0)
         {
             ChangeAnimationState(playerJump);
+        }
+        else if(rigidbody.linearVelocity.y < 0)
+        {
+            ChangeAnimationState(playerFall);
         }
         else
         {

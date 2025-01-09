@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "G:\\Unity\\Projects\\Slimebound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\shaders\\watershader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\watershader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WaterShader.shader",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Shaders\\WaterShader.shader",
+              "RelativeDocumentMoniker": "Assets\\Shaders\\WaterShader.shader",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Shaders\\WaterShader.shader",
+              "RelativeToolTip": "Assets\\Shaders\\WaterShader.shader",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-01-06T16:15:30.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerAnimator.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
               "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwB8AAAAJAAAA",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T16:51:03.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CopyHorizontalRotation.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\CopyHorizontalRotation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CopyHorizontalRotation.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CopyHorizontalRotation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T16:06:52.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T16:06:52.228Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ColliderTransformer.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\ColliderTransformer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ColliderTransformer.cs",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ColliderTransformer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:55:11.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:55:11.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerControllerRevamped.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "ViewState": "AQIAADABAAAAAAAAAAAiwEABAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T13:43:30.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:43:30.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ViewState": "AQIAAGUAAAAAAAAAAAAhwHQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:59:54.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T17:59:54.93Z"
             }
           ]
         }
