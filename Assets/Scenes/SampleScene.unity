@@ -477,7 +477,7 @@ Camera:
   far clip plane: 300
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -706,26 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6197462f7d60604d90067a427827eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraFollow: {fileID: 0}
-  inputHandler: {fileID: 0}
-  moveSpeed: 5
-  gravityMultiplier: 2
-  groundCheckDistance: 0.1
-  ceilingCheckDistance: 0.1
-  wallCheckDistance: 0.5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  wallSlideSpeed: 2
-  dashingPower: 10
-  dashingTime: 0.2
-  dashingCooldown: 1
-  jumpForce: 5
-  wallJumpForce: 7
-  maxJumpHeight: 2
-  coyoteTime: 0.2
-  jumpBufferTime: 0.2
-  wallJumpDirection: {x: -1, y: 1, z: 0}
 --- !u!114 &341935672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,6 +1238,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825fc1e6cd35a1c409b5126be6a271ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRise: 1
+  isEndFall: 1
+  isStartHitch: 1
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
