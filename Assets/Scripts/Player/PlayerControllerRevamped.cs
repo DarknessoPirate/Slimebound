@@ -93,77 +93,9 @@ public class PlayerControllerRevamped : MonoBehaviour
         if (!isDashing)
         {
             ApplyGravity();
-            if (CheckPlayerVisibility())
-            {
-                Move();
-                Jump();
-            }
-        } else
-        {
-            CheckPlayerVisibility();
+            Move();
+            Jump();
         }
-    }
-
-    private bool CheckPlayerVisibility()
-    {
-        Vector3 direction = transform.position - cameraFollow.transform.position;
-        RaycastHit hit;
-        int pillarLayer = LayerMask.NameToLayer("Pillar");
-        int playerLayer = LayerMask.NameToLayer("Player");
-
-        // Create a layer mask that includes "Pillar", "Player", and "Default"
-        int layerMask = (1 << pillarLayer) | (1 << playerLayer);
-
-        // Perform the raycast
-        if (Physics.Raycast(cameraFollow.transform.position, direction, out hit, direction.magnitude + 10f, layerMask))
-        {
-            //Debug.DrawLine(cameraFollow.transform.position, hit.point, Color.green);
-            if (hit.collider.tag == "Player")
-            {
-                catchedVelocity = _rb.linearVelocity;
-                inputHandler.EnabledInputs = true;
-                broughtPlayerBack = false;
-                return true;
-            } else
-            {
-                if(broughtPlayerBack == false)
-                {
-                    var movementIntendedDirection = Math.Max(Math.Abs(_rb.linearVelocity.x), Math.Abs(_rb.linearVelocity.z));
-                    if(movementIntendedDirection > 0.01f)
-                    {
-                        if (Math.Abs(_rb.linearVelocity.x) == movementIntendedDirection)
-                        {
-                            if (_rb.linearVelocity.x == movementIntendedDirection) // Positive x velocity
-                            {
-                                //Debug.Log("X+");
-                                _rb.AddForce(Vector3.left * 10, ForceMode.Impulse);
-                            }
-                            else // Negative x velocity
-                            {
-                                //Debug.Log("X-");
-                                _rb.AddForce(Vector3.right * 10, ForceMode.Impulse);
-                            }
-                        }
-                        else
-                        {
-                            if (_rb.linearVelocity.z == movementIntendedDirection) // Positive z velocity
-                            {
-                                //Debug.Log("Z+");
-                                _rb.AddForce(Vector3.back * 10, ForceMode.Impulse);
-                            }
-                            else // Negative z velocity
-                            {
-                                //Debug.Log("Z-");
-                                _rb.AddForce(Vector3.forward * 10, ForceMode.Impulse);
-                            }
-                        }
-                    }
-                    inputHandler.EnabledInputs = false;
-                    broughtPlayerBack = true;
-                }
-            }
-        }
-        return false;
     }
 
     private void HandleLedge()

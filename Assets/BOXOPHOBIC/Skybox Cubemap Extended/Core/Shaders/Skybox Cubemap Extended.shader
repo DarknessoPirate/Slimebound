@@ -12,7 +12,7 @@ Shader "Skybox/Cubemap Extended"
 		_CubemapPosition("Cubemap Position", Float) = 0
 		[StyledCategory(Rotation Settings)]_Rotationn("[ Rotationn ]", Float) = 1
 		[Toggle(_ENABLEROTATION_ON)] _EnableRotation("Enable Rotation", Float) = 0
-		[IntRange][Space(10)]_Rotation("Rotation", Range( 0 , 360)) = 0
+		_Rotation("Rotation", Float) = 0
 		_RotationSpeed("Rotation Speed", Float) = 1
 		[StyledCategory(Fog Settings)]_Fogg("[ Fogg ]", Float) = 1
 		[Toggle(_ENABLEFOG_ON)] _EnableFog("Enable Fog", Float) = 0

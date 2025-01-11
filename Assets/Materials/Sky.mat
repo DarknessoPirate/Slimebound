@@ -128,8 +128,8 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 198
-    - _RotationSpeed: 1
+    - _Rotation: 2.3292496
+    - _RotationSpeed: 0
     - _Rotationn: 1
     - _SkyboxExtended: 1
     - _Smoothness: 0.5

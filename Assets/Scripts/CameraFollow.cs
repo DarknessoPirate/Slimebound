@@ -7,11 +7,15 @@ public class CameraFollow : MonoBehaviour
     public Transform target;              // playere reference
     public float distance = 10f;          // distance from the player
     public float height = 5f;             // height offset from the player
-
+    
     public float targetRotationY = 90f;   //  target Y rotation angle in degrees
     public float cameraRotationEndThreshold = 0.5f;
     public bool isRotating = false;
+
+    public float finishRotationTime = 0.8f; // manual time, set it after determining how long does the rotation take
+
     private float cameraCooldown = 0;
+
     public bool isOnCooldown
     {
         get { return cameraCooldown > 0; }
@@ -70,7 +74,7 @@ public class CameraFollow : MonoBehaviour
             isRotating = true;
 
             // apply rotation and reset isRotating after a slight delay
-            Invoke("FinishRotation", 0.1f); // reset isRotating with a slight delay
+            Invoke("FinishRotation", finishRotationTime); // reset isRotating with a slight delay
         }
     }
 
