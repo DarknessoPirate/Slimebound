@@ -65,6 +65,13 @@ public class PlayerControllerRevamped : MonoBehaviour
     private Vector3 catchedVelocity;
     private bool broughtPlayerBack = false;
 
+    // Actions for sound FX
+    public event Action OnPerformedJump;
+    public event Action OnPerformedAirJump;
+    public event Action<float> OnMove;
+    public event Action OnHitCeiling;
+    public event Action OnChangedAxis;
+
     private void Start()
     {
         m_started = true;
@@ -80,16 +87,18 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         HandleLedge();
         CheckGrounded();
         HandleTimers();
         CheckCeilingHit();
         CheckWallCollision();
         CheckDirectionToFace(moveDirection);
-    }
 
-    private void FixedUpdate()
-    {
         if (!isDashing)
         {
             ApplyGravity();
@@ -121,6 +130,7 @@ public class PlayerControllerRevamped : MonoBehaviour
         if (canDash)
         {
             StartCoroutine(Dash());
+            OnPerformedAirJump?.Invoke();
         }
     }
 
@@ -138,7 +148,7 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private void HandleRotation(float value)
     {
-        if (cameraFollow.isReadyToRotate)
+        if (cameraFollow.isReadyToRotate && isGrounded)
         {
             if (value > 0)
             {
@@ -148,6 +158,7 @@ public class PlayerControllerRevamped : MonoBehaviour
                 }
                 cameraFollow.RotateCamera(-90f);
                 movementAxis = Quaternion.Euler(0, -90, 0) * movementAxis;
+                OnChangedAxis?.Invoke();
             }
             else if (value < 0)
             {
@@ -157,6 +168,7 @@ public class PlayerControllerRevamped : MonoBehaviour
                 }
                 cameraFollow.RotateCamera(90f);
                 movementAxis = Quaternion.Euler(0, 90, 0) * movementAxis; // Rotate movement axis
+                OnChangedAxis?.Invoke();
             }
         }
     }
@@ -209,7 +221,12 @@ public class PlayerControllerRevamped : MonoBehaviour
         Vector3 movementForce = velocityDifference * accelRate;
         _rb.AddForce(movementForce, ForceMode.Acceleration);
 
-
+        if(isGrounded) 
+            OnMove?.Invoke(_rb.linearVelocity.magnitude);
+        else
+        {
+            OnMove?.Invoke(0f);
+        }
     }
 
     private void Jump()
@@ -224,6 +241,7 @@ public class PlayerControllerRevamped : MonoBehaviour
             {
                 lastWallJumpNormal = wallNormal; //save last normal
             }
+            OnPerformedJump?.Invoke();
             return;
 
         }
@@ -233,6 +251,7 @@ public class PlayerControllerRevamped : MonoBehaviour
             isJumping = true;
             lastJumpPressedTime = 0;
             canDoubleJump = true;
+            OnPerformedJump?.Invoke();
         }
         else if (CanDoubleJump() && lastJumpPressedTime > 0)
         {
@@ -240,6 +259,7 @@ public class PlayerControllerRevamped : MonoBehaviour
             isJumping = true;
             lastJumpPressedTime = 0;
             canDoubleJump = false;
+            OnPerformedAirJump?.Invoke();
         }
 
     }
@@ -284,7 +304,7 @@ public class PlayerControllerRevamped : MonoBehaviour
         if (isTouchingCeiling && _rb.linearVelocity.y > 0)
         {
             _rb.linearVelocity = new Vector3(_rb.linearVelocity.x, 0, _rb.linearVelocity.z);
-            Debug.Log("Killing velocity y");
+            OnHitCeiling?.Invoke();
         }
     }
 
