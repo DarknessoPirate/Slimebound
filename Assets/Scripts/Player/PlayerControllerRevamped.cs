@@ -85,7 +85,7 @@ public class PlayerControllerRevamped : MonoBehaviour
         HandleTimers();
         CheckCeilingHit();
         CheckWallCollision();
-        CheckDirectionToFace(moveDirection < 0);
+        CheckDirectionToFace(moveDirection);
     }
 
     private void FixedUpdate()
@@ -360,13 +360,12 @@ public class PlayerControllerRevamped : MonoBehaviour
     }
 
 
-    private void CheckDirectionToFace(bool isMovingLeft)
+    private void CheckDirectionToFace(float faceDirection)
     {
-        if (isMovingLeft)
+        if (faceDirection < 0f && transform.localScale.x != -1f)
         {
-            if (transform.localScale.x != -1f) 
-                transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
-        } else if(transform.localScale.x != 1f && (_rb.linearVelocity.x > 0f || _rb.linearVelocity.z > 0f))
+            transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
+        } else if(faceDirection > 0f && transform.localScale.x != 1f)
         {
             transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
         }
