@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b531e8348ce1e5847b6493a7319ec873
+guid: 119c2c6a69277784bb43ee6bc24e7974
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cape-Sheet_0
+      name: MainSlimeSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,21 +105,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2bbcf3d8e183dc4db6bc052c0f572ca
-      internalID: -354388474
+      spriteID: 27a1fb328fb18a042be15ad96bb2a539
+      internalID: -1808606866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_1
+      name: MainSlimeSheet_1
       rect:
         serializedVersion: 2
         x: 48
@@ -127,43 +127,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb90fb957f5d7394e972d9deefb2a681
-      internalID: -629415079
+      spriteID: 125f5dc107883924c9bc62a3687d3fd8
+      internalID: -382825113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d220abead5f36142957563c606841aa
-      internalID: 170254358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cape-Sheet_3
+      name: MainSlimeSheet_2
       rect:
         serializedVersion: 2
         x: 0
@@ -171,21 +149,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21f7e6ad47fe562439303bdba8884bef
-      internalID: -562471781
+      spriteID: 5711f1a40d88987428a881003d299374
+      internalID: -594114768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_4
+      name: MainSlimeSheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -193,21 +171,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acc28e6a6072d524599104e9de23298e
-      internalID: -1354208256
+      spriteID: 17f8145ec00b4ea4cae3ae6f72f6126d
+      internalID: 1855796154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_5
+      name: MainSlimeSheet_4
       rect:
         serializedVersion: 2
         x: 96
@@ -215,21 +193,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb899ebdbe04f1b41a850e03f65a22ea
-      internalID: 53980814
+      spriteID: 4d95941cd6cdce244b37b2a7f7e7232d
+      internalID: -1850984494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_6
+      name: MainSlimeSheet_5
       rect:
         serializedVersion: 2
         x: 144
@@ -237,21 +215,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e597b021c8235c4aa859ee221243438
-      internalID: -1767595124
+      spriteID: e9149a00ed6b9ad42a3f209f1fd0288b
+      internalID: 767808867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_7
+      name: MainSlimeSheet_6
       rect:
         serializedVersion: 2
         x: 192
@@ -259,21 +237,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 073b433f430f8b84ab308a356178bdd9
-      internalID: 610692000
+      spriteID: 9a9a15b4ef2beb14ca0bc1e523a43b80
+      internalID: 1123901781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_8
+      name: MainSlimeSheet_7
       rect:
         serializedVersion: 2
         x: 240
@@ -281,21 +259,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65a4a3d31da4bd7489322748dcc790c0
-      internalID: -1578659118
+      spriteID: af0fa8e5a536cee40b81fa2fa32108c7
+      internalID: 1528581922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_9
+      name: MainSlimeSheet_8
       rect:
         serializedVersion: 2
         x: 288
@@ -303,21 +281,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0f1294f0d40b3a4c9df3eddde455f0b
-      internalID: 152714963
+      spriteID: adf0f6509ea1c5d409340fc18f74cb17
+      internalID: 566778267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_10
+      name: MainSlimeSheet_9
       rect:
         serializedVersion: 2
         x: 336
@@ -325,21 +303,65 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d76255cac6e9b5b499d28e0da83f884f
-      internalID: 611313026
+      spriteID: 9925c2a042067b5499b0c44cf7861e4e
+      internalID: 2081944603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_11
+      name: MainSlimeSheet_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4a5d333ca56f94da38cb0767239a51
+      internalID: -1102370832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afae6dcc29b620046aea5d13a9311e6a
+      internalID: 878194132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -347,21 +369,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c561dd47f3fdfcf4abd55025c2415189
-      internalID: 1992238661
+      spriteID: d7bb725a26f7a8247a145338bc95fad9
+      internalID: -1985920845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_12
+      name: MainSlimeSheet_13
       rect:
         serializedVersion: 2
         x: 48
@@ -369,21 +391,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 630eae8f478dc9c44ac77d93018b3457
-      internalID: 1609109694
+      spriteID: a34ddd3f1cba5624bad0a6f77faeaa8c
+      internalID: -833599109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_13
+      name: MainSlimeSheet_14
       rect:
         serializedVersion: 2
         x: 96
@@ -391,21 +413,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc825d5d98722504894f42b3113ee448
-      internalID: 50625444
+      spriteID: a853b9d048c710244a8c80800009f7f5
+      internalID: 1951179362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_14
+      name: MainSlimeSheet_15
       rect:
         serializedVersion: 2
         x: 144
@@ -413,21 +435,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d1270ea7ff93fb49ace98683fb9e94f
-      internalID: 125171993
+      spriteID: 3214cc31e8de9b84799c412cc1b8ed21
+      internalID: -552836186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_15
+      name: MainSlimeSheet_16
       rect:
         serializedVersion: 2
         x: 192
@@ -435,21 +457,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3c7e7d69225cb40b93b5f53dfaf32a
-      internalID: 384326312
+      spriteID: e8af3aa5e83a93d41b76e06b408b4569
+      internalID: -853815727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_16
+      name: MainSlimeSheet_17
       rect:
         serializedVersion: 2
         x: 0
@@ -457,21 +479,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5025072003b37f3459c1e981626f7a25
-      internalID: -1431479506
+      spriteID: 45eb83e74d325e54a89e6d79d60c0944
+      internalID: 1194192255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_17
+      name: MainSlimeSheet_18
       rect:
         serializedVersion: 2
         x: 48
@@ -479,21 +501,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f711b8348e2d3c45b1b119b95aef5f0
-      internalID: -599994045
+      spriteID: 572745c730036424fa29f6cd5332b475
+      internalID: -1885836652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_18
+      name: MainSlimeSheet_19
       rect:
         serializedVersion: 2
         x: 96
@@ -501,21 +523,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89fc4ebb0657fdc44b4d7f796bb0be19
-      internalID: 1385894250
+      spriteID: 9229eb794b45ec048abdb3543a69398d
+      internalID: -406638622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_19
+      name: MainSlimeSheet_20
       rect:
         serializedVersion: 2
         x: 144
@@ -523,21 +545,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf8602c34e50f534c8e582a80a1603f7
-      internalID: -1411522028
+      spriteID: 3c7c0590fe105c74d822d4e48bd09ba2
+      internalID: -298346215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_20
+      name: MainSlimeSheet_21
       rect:
         serializedVersion: 2
         x: 192
@@ -545,21 +567,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 248288ff42d38eb4b8d31f7213c74c75
-      internalID: -612763976
+      spriteID: 58847e08991909c41acd7975e2e30f70
+      internalID: -1020173013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_21
+      name: MainSlimeSheet_22
       rect:
         serializedVersion: 2
         x: 240
@@ -567,21 +589,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbf5eff3784cd94291f9331a972e983
-      internalID: -33242715
+      spriteID: c5668c03b482bea4780f4cc51f379211
+      internalID: 1026623101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_22
+      name: MainSlimeSheet_23
       rect:
         serializedVersion: 2
         x: 288
@@ -589,21 +611,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 810143e004cf88f42b2ebe886ea4f93c
-      internalID: 1893874244
+      spriteID: 3441d0a865151404a953bf15edc20033
+      internalID: -1854124059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_23
+      name: MainSlimeSheet_24
       rect:
         serializedVersion: 2
         x: 336
@@ -611,21 +633,87 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 116461dff63bd14429c2f023bebe2981
-      internalID: -167719213
+      spriteID: 6825b7a26892f0c40884a5ff44ecea5e
+      internalID: -1760311476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_24
+      name: MainSlimeSheet_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a520449d1e440944824cae4c6dc2e82
+      internalID: -2130527502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a2d739d39ad2546979514fd352df94
+      internalID: 2065603304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c62688e53529304b959a4d9ff32afcd
+      internalID: -1867462111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_28
       rect:
         serializedVersion: 2
         x: 0
@@ -633,21 +721,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1cdb3578c34a1144904aecd75ade85a
-      internalID: -1349637159
+      spriteID: e05cf35a31795fb4aa9259e156ee8584
+      internalID: 1847245610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_25
+      name: MainSlimeSheet_29
       rect:
         serializedVersion: 2
         x: 48
@@ -655,21 +743,21 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f03a8c51e9e0544cbd4976c3f0d6aed
-      internalID: 1168132751
+      spriteID: 27181d1da41073848ae39d958e74ade9
+      internalID: 545848800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cape-Sheet_26
+      name: MainSlimeSheet_30
       rect:
         serializedVersion: 2
         x: 96
@@ -677,15 +765,37 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4557d5e19e972b8409e77407250f79d3
-      internalID: -1405816617
+      spriteID: 065d43d027b4fb849a94ad5f2d500a35
+      internalID: 1511255733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MainSlimeSheet_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a511e421c8458764a94abf181cb5c61e
+      internalID: -1743590739
       vertices: []
       indices: 
       edges: []
@@ -694,7 +804,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 24057186a0112db4b96876859a377b3e
+    spriteID: 0819a0461b8d8b644b52868b3750c91c
     internalID: 0
     vertices: []
     indices: 
@@ -704,33 +814,38 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cape-Sheet_0: -354388474
-      Cape-Sheet_1: -629415079
-      Cape-Sheet_10: 611313026
-      Cape-Sheet_11: 1992238661
-      Cape-Sheet_12: 1609109694
-      Cape-Sheet_13: 50625444
-      Cape-Sheet_14: 125171993
-      Cape-Sheet_15: 384326312
-      Cape-Sheet_16: -1431479506
-      Cape-Sheet_17: -599994045
-      Cape-Sheet_18: 1385894250
-      Cape-Sheet_19: -1411522028
-      Cape-Sheet_2: 170254358
-      Cape-Sheet_20: -612763976
-      Cape-Sheet_21: -33242715
-      Cape-Sheet_22: 1893874244
-      Cape-Sheet_23: -167719213
-      Cape-Sheet_24: -1349637159
-      Cape-Sheet_25: 1168132751
-      Cape-Sheet_26: -1405816617
-      Cape-Sheet_3: -562471781
-      Cape-Sheet_4: -1354208256
-      Cape-Sheet_5: 53980814
-      Cape-Sheet_6: -1767595124
-      Cape-Sheet_7: 610692000
-      Cape-Sheet_8: -1578659118
-      Cape-Sheet_9: 152714963
+      MainSlimeSheet_0: -1808606866
+      MainSlimeSheet_1: -382825113
+      MainSlimeSheet_10: -1102370832
+      MainSlimeSheet_11: 878194132
+      MainSlimeSheet_12: -1985920845
+      MainSlimeSheet_13: -833599109
+      MainSlimeSheet_14: 1951179362
+      MainSlimeSheet_15: -552836186
+      MainSlimeSheet_16: -853815727
+      MainSlimeSheet_17: 1194192255
+      MainSlimeSheet_18: -1885836652
+      MainSlimeSheet_19: -406638622
+      MainSlimeSheet_2: -594114768
+      MainSlimeSheet_20: -298346215
+      MainSlimeSheet_21: -1020173013
+      MainSlimeSheet_22: 1026623101
+      MainSlimeSheet_23: -1854124059
+      MainSlimeSheet_24: -1760311476
+      MainSlimeSheet_25: -2130527502
+      MainSlimeSheet_26: 2065603304
+      MainSlimeSheet_27: -1867462111
+      MainSlimeSheet_28: 1847245610
+      MainSlimeSheet_29: 545848800
+      MainSlimeSheet_3: 1855796154
+      MainSlimeSheet_30: 1511255733
+      MainSlimeSheet_31: -1743590739
+      MainSlimeSheet_4: -1850984494
+      MainSlimeSheet_5: 767808867
+      MainSlimeSheet_6: 1123901781
+      MainSlimeSheet_7: 1528581922
+      MainSlimeSheet_8: 566778267
+      MainSlimeSheet_9: 2081944603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
