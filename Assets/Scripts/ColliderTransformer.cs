@@ -1,11 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+This script is responsible for controlling colliders of ColliderCopy objects.
+It also detectes and saves colliders of ColliderCopy objects.
+Collider sizes and activation are controlled by ColliderManager script.
+*/
+
 public class ColliderTransformer : MonoBehaviour
 {
     private bool m_Started;
     private Collider[] _hitColliders;
 
+    // save colliders in a bounding box
     public void GetColliders()
     {
         int colliderCopyLayer = LayerMask.NameToLayer("ColliderCopy");
