@@ -6,11 +6,13 @@ public class PlayerInputHandler : MonoBehaviour
 {
     public bool EnabledInputs = true;
 
+    public InputAction interaction;
     public InputAction move;
     public InputAction rotate;
     public InputAction jump;
     public InputAction dash;
 
+    public event Action OnInteraction;
     public event Action<float> OnMove; // Notifies PlayerController with horizontal input
     public event Action<float> OnRotate; // Notifies PlayerController with rotation input
     public event Action OnJump; // Notifies PlayerController when jump is triggered
@@ -18,6 +20,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnEnable()
     {
+        interaction.Enable();
         move.Enable();
         rotate.Enable();
         jump.Enable();
@@ -26,6 +29,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void OnDisable()
     {
+        interaction.Disable();
         move.Disable();
         rotate.Disable();
         jump.Disable();
@@ -62,6 +66,11 @@ public class PlayerInputHandler : MonoBehaviour
             if (dash.triggered)
             {
                 OnDash?.Invoke();
+            }
+
+            if (interaction.triggered)
+            {
+                OnInteraction?.Invoke(); 
             }
         }
     }

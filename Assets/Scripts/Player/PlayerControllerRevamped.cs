@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerControllerRevamped : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+
     public CameraFollow cameraFollow;
     private Rigidbody _rb;
     private BoxCollider _boxCollider;
@@ -382,12 +384,14 @@ public class PlayerControllerRevamped : MonoBehaviour
 
     private void CheckDirectionToFace(float faceDirection)
     {
-        if (faceDirection < 0f && transform.localScale.x != -1f)
+        if (faceDirection < 0f ) //&& transform.localScale.x != -1f
         {
-            transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
-        } else if(faceDirection > 0f && transform.localScale.x != 1f)
+            spriteRenderer.flipX = true;
+            //transform.localScale = new Vector3(-1f, transform.localScale.y, transform.localScale.z);
+        } else if(faceDirection > 0f) //&& transform.localScale.x != 1f
         {
-            transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
+            spriteRenderer.flipX = false;
+            //transform.localScale = new Vector3(1f, transform.localScale.y, transform.localScale.z);
         }
     }
 

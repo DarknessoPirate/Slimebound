@@ -19,9 +19,9 @@ public class PlayerAnimator : MonoBehaviour
     const string playerHitch = "Hitch";
     const string playerStartHitch = "StartHitch";
 
-    [SerializeField] bool isRise = true;
-    [SerializeField] bool isEndFall = true;
-    [SerializeField] bool isStartHitch = true;
+    [SerializeField] bool isRise = false;
+    [SerializeField] bool isEndFall = false;
+    [SerializeField] bool isStartHitch = false;
 
     void Awake()
     {
@@ -37,7 +37,8 @@ public class PlayerAnimator : MonoBehaviour
 
         if (playerControllerRevamped.isGrounded)
         {
-            if (currentState != playerIdle && isEndFall)
+            isRise = true;
+            if (isEndFall)
             {
                 ChangeAnimationState(playerEndFall);
                 isEndFall = false;
@@ -45,13 +46,13 @@ public class PlayerAnimator : MonoBehaviour
             else if (!isAnimationPlaying(playerEndFall))
             {
                 ChangeAnimationState(playerIdle);
-                isEndFall = true;
             }
                 
         }
         else if(playerControllerRevamped.isTouchingWall)
         {
-            if(currentState != playerHitch && isStartHitch)
+            isRise = true;
+            if (isStartHitch)
             {
                 ChangeAnimationState(playerStartHitch);
                 isStartHitch = false;
@@ -59,22 +60,23 @@ public class PlayerAnimator : MonoBehaviour
             else if(!isAnimationPlaying(playerStartHitch))
             {
                 ChangeAnimationState(playerHitch);
-                isStartHitch = true;
             }
-
         }
         else
         {
+            isEndFall = true;
+            isStartHitch = true;
             if(rigidbody.linearVelocity.y > Mathf.Epsilon)
-            { 
-                if(currentState == playerIdle)
+            {
+                isRise = true;
+                if (currentState == playerIdle)
                     ChangeAnimationState(playerStartJump);
                 else if(!isAnimationPlaying(playerStartJump))
                     ChangeAnimationState(playerJump);
             }
-            else if (rigidbody.linearVelocity.y < Mathf.Epsilon)
+            else if (rigidbody.linearVelocity.y <= Mathf.Epsilon)
             {
-                if(!isRise)
+                if(isRise)
                 {
                     ChangeAnimationState(playerRaise);
                     isRise = false;
@@ -82,7 +84,6 @@ public class PlayerAnimator : MonoBehaviour
                 else if(!isAnimationPlaying(playerRaise))
                 {
                     ChangeAnimationState(playerFall);
-                    isRise = true;
                 }          
             }
         }

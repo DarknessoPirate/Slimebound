@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "G:\\Unity\\Projects\\Slimebound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\shaders\\pixelarttriplanarstencil.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\pixelarttriplanarstencil.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeranimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\player\\playerinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PixelArtTriplanarStencil.shader",
-              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Shaders\\PixelArtTriplanarStencil.shader",
-              "RelativeDocumentMoniker": "Assets\\Shaders\\PixelArtTriplanarStencil.shader",
-              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Shaders\\PixelArtTriplanarStencil.shader",
-              "RelativeToolTip": "Assets\\Shaders\\PixelArtTriplanarStencil.shader",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-01-12T11:29:08.705Z",
+              "DocumentIndex": 1,
+              "Title": "Portal.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Portal.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Portal.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:50:11.054Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerAnimator.cs",
-              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAnimator.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAgwFQAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerInputHandler.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:21:53.176Z",
+              "WhenOpened": "2025-01-16T15:44:39.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerControllerRevamped.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAnwHUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:22:56.741Z",
               "EditorCaption": ""
             }
           ]
