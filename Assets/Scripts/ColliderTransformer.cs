@@ -3,7 +3,8 @@ using UnityEngine;
 
 /*
 This script is responsible for controlling colliders of ColliderCopy objects.
-It also detectes and saves colliders of ColliderCopy objects.
+It also detectes and saves colliders of ColliderCopy objects that will be culled
+based on gameplay direction.
 Collider sizes and activation are controlled by ColliderManager script.
 */
 
