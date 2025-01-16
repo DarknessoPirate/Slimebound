@@ -1,8 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+This script is responsible for:
+
+Stretching colliders in a particular direction;
+Adding ColliderTransformerHelper to copied colliders;
+Managing ColliderTransformer for culler scripts;
+
+Everything is done automaticly based on Player's current axis
+*/
+
 public class ColliderManager : MonoBehaviour
 {
+
+    // GameObjects whose colliders change during runtime
     internal class TransformedObject
     {
         public GameObject copiedObject { get; }
@@ -72,6 +84,7 @@ public class ColliderManager : MonoBehaviour
         }
     }
 
+    // Teleports the player to collider if collider is TransformedObject
     public void CheckTransformedCollider(Collider collider, GameObject player)
     {
         foreach (var transformed in _detectedColliders)
