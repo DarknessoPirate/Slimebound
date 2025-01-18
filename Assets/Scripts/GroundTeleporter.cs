@@ -8,10 +8,12 @@ public class GroundTeleporter : MonoBehaviour
     public float DistanceFromPillar = 0.03f;
     public float BehindPillarDistanceDetection = 0.45f;
     private BoxCollider _pillarBoxCollider;
+    private PlayerControllerRevamped _playerControllerRevamped;
 
     private void Start()
     {
         _pillarBoxCollider = GameObject.Find("Pillar").GetComponent<BoxCollider>();
+        _playerControllerRevamped = Player.GetComponent<PlayerControllerRevamped>();
     }
 
     private void teleportPlayerToFront(Vector3 hitNormal)
@@ -31,6 +33,41 @@ public class GroundTeleporter : MonoBehaviour
         else
         {
             Player.transform.position = new Vector3(_pillarBoxCollider.bounds.min.x - 0.7f, transform.position.y, transform.position.z);
+        }
+    }
+
+    //CHECK FOR: Player is above pillar's top point and might need to be teleported towards it.
+    private void checkPlayerAbovePillar()
+    {
+        if (Player.GetComponent<BoxCollider>().bounds.min.y <= _pillarBoxCollider.bounds.max.y || Camera.main.GetComponent<CameraFollow>().isRotating)
+        {
+            return;
+        }
+
+        var distinguishedAxis = _playerControllerRevamped.GetMovementAxis().normalized;
+        Vector3 rayCastOrigin;
+        Vector3 upOffset = new Vector3(0, 0f, 0);
+
+        if (Mathf.Abs(distinguishedAxis.x) == 1)
+        {
+            if (Player.transform.position.z == _pillarBoxCollider.transform.position.z)
+            {
+                return;
+            }
+            rayCastOrigin = new Vector3(Player.transform.position.x, Player.transform.position.y, _pillarBoxCollider.transform.position.z);
+        } else
+        {
+            if (Player.transform.position.x == _pillarBoxCollider.transform.position.x)
+            {
+                return;
+            }
+            rayCastOrigin = new Vector3(_pillarBoxCollider.transform.position.x, Player.transform.position.y, Player.transform.position.z);
+        }
+
+        Debug.DrawRay(rayCastOrigin + upOffset, Vector3.down, Color.magenta);
+
+        if(Physics.Raycast(rayCastOrigin + upOffset, Vector3.down, 20f, 1 << LayerMask.NameToLayer("Pillar"))) {
+            Player.transform.position = rayCastOrigin;
         }
     }
 
@@ -142,5 +179,8 @@ public class GroundTeleporter : MonoBehaviour
 
         // CHECK FOR: Pillar is either on left or right side of the player case
         checkLeftRightPillar();
+
+        //CHECK FOR: Player is above pillar's top point and might need to be teleported towards it.
+        checkPlayerAbovePillar();
     }
 }
