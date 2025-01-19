@@ -9,12 +9,20 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         if (!isClick)
+        {
+            isClick = true;
             controller.GoToScene(1);
+        }
+            
     }
 
     public void QuitGame()
     {
         if (!isClick)
+        {
+            isClick = true;
             controller.GoToExit();
+        }
+            
     }
 }

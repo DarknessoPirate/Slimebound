@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "G:\\Unity\\Projects\\Slimebound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|g:\\unity\\projects\\slimebound\\assets\\scripts\\abyss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\abyss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playerinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\old\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\old\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|G:\\Unity\\Projects\\Slimebound\\assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2AE392A-0ACA-5A37-CE95-7F2EC31E81DC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontrollerrevamped.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +46,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SceneController.cs",
-              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\SceneController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneController.cs",
-              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\SceneController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EndGame.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\EndGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EndGame.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\EndGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EndGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T22:21:52.045Z",
+              "WhenOpened": "2025-01-19T13:23:26.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
               "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T14:11:06.396Z",
               "EditorCaption": ""
@@ -65,19 +77,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Portal.cs",
-              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Portal.cs",
-              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Portal.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Title": "Abyss.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Abyss.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Abyss.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Abyss.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Abyss.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T21:50:11.054Z",
+              "WhenOpened": "2025-01-19T11:42:08.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "SceneController.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\SceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneController.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\SceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T22:21:52.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Portal.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Portal.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Portal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Portal.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T21:50:11.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
+              "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvw8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T00:19:11.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\Old\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Old\\PlayerController.cs",
@@ -85,12 +133,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Old\\PlayerController.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAUwLsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T14:09:31.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T14:09:31.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerInputHandler.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerInputHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
@@ -98,18 +145,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInputHandler.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAIwEgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T15:44:39.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T15:44:39.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "PlayerControllerRevamped.cs",
               "DocumentMoniker": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "ToolTip": "G:\\Unity\\Projects\\Slimebound\\Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControllerRevamped.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAnwHUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAArwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T15:22:56.741Z"
             }
