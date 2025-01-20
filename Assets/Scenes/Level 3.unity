@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 722439304}
   interaction: {fileID: 821182102}
-  scene: 0
+  scene: 4
 --- !u!65 &603089008
 BoxCollider:
   m_ObjectHideFlags: 0

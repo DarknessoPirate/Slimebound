@@ -977,7 +977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congratulation!
+  m_text: 'Congratulations!
 
     You finished the game'
   m_isRightToLeft: 0
