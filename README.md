@@ -19,7 +19,7 @@ Project has been created in Unity 6 (6000.0.23f1) with Univeral Render Pipeline.
   - **Coyote handling**
   - **Dashing**
 - **Custom made shaders**: Project features shaders made in Unity Shadergraph.
-  - **RandomTextureFromTilesForBlockChucks*: Shader capable of automatic tiling of textures + random picking of texture from tile-set with addition of pixel noise and self-defined glossiness.
+  - *RandomTextureFromTilesForBlockChucks*: Shader capable of automatic tiling of textures + random picking of texture from tile-set with addition of pixel noise and self-defined glossiness.
 - **Slimy animations and graphics**: All with addition of nice sounds.
 - **Multiple levels to beat**: Beat them all and easily intergrate new ones.
 
@@ -40,8 +40,8 @@ Project has been created in Unity 6 (6000.0.23f1) with Univeral Render Pipeline.
   
 ![Movements](Preview/Movement.gif)
 - **Autmated random & tiling shader**
-  
-![Shader](Preview/Shader.gif)
+![Shader Settings](Preview/Shader2.gif)
+![Shader graph](Preview/Shader.gif)
 
 ---
 ## How to use
