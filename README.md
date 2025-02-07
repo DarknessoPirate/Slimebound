@@ -1,4 +1,4 @@
-# "Slimebound" PC game 
+# "Slimebound" Unity game 
 
 ## Introduction
 "Slimebound" is the platforming game based on [Fez](https://store.steampowered.com/app/224760/FEZ/) with its own orginal implementation of changing dimension axis mechanic.     
@@ -47,7 +47,8 @@ Project has been created in Unity 6 (6000.0.23f1) with Univeral Render Pipeline.
 ## How to use
 1. Clone this repository
 2. Open the project in Unity.
-3. Install missing packages - [Midgard Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/midgard-skybox-273733?srsltid=AfmBOoqP3S140YyvE5kD8pIu3dOXUw68yvHKqdWrM8dp6tjdJhRuc4y8) & [FREE Skybox Extended Shader](https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-107400?srsltid=AfmBOopqa3qULnMYJAMo5BwzXAv2pAsBaOWTrvb94sIOsdTvnfDarZYf) from Unity Asset Store
+3. Install missing packages or choose your own skybox
+In media we have used either [Midgard Skybox](https://assetstore.unity.com/packages/2d/textures-materials/sky/midgard-skybox-273733?srsltid=AfmBOoqP3S140YyvE5kD8pIu3dOXUw68yvHKqdWrM8dp6tjdJhRuc4y8) or [FREE Skybox Extended Shader](https://assetstore.unity.com/packages/vfx/shaders/free-skybox-extended-shader-107400?srsltid=AfmBOopqa3qULnMYJAMo5BwzXAv2pAsBaOWTrvb94sIOsdTvnfDarZYf) from Unity Asset Store for Skybox
 
 ---
 ## How to play
