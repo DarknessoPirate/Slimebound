@@ -39,7 +39,7 @@ Project has been created in Unity 6 (6000.0.23f1) with Univeral Render Pipeline.
 - **Movement system**
   
 ![Movements](Preview/Movement.gif)
-- **Autmated random & tiling shader**
+- **Automated random & tiling shader**
 ![Shader Settings](Preview/Shader2.gif)
 ![Shader graph](Preview/Shader.gif)
 
